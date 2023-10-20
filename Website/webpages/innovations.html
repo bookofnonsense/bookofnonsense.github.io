@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Drafting in D&D - Innovations</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/table.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body class="reg-bg scrollable">
+	<header> <!-- ! Header -->
+		<div class="container site-header d-flex">
+			<a href="index.html" draggable="false">
+				<img src="../images/logo-words.png" class="logo" alt="Drafting in D&D" draggable="false">
+			</a>
+			<nav class="main-navigation ml-auto">
+				<ul>
+					<li><a href="drafter.html" draggable="false">Drafter</a></li>
+					<li><a href="builder.html" draggable="false">Builder</a></li>
+					<li><a href="spells.html" draggable="false">Spells</a></li>
+					<li class="active-page"><a href="innovations.html" draggable="false">Innovations</a></li>
+				</ul>
+			</nav> <!-- /main navigation -->
+		</div> <!-- /site header -->
+	</header>
+
+	<div class="main-content"> <!-- ! Content Section -->
+		<div class="container">
+			<h1 class="title">Innovative Modifications</h1>
+
+			<div class="row">
+				<table id="table" class="innovative-table">
+					<thead>
+						<tr>
+							<th class="mod-name-head">Modification Name</th>
+							<th id="levelHeader" class="level-head">
+								Level Requirement
+								<div class="custom-dropdown">
+									<div class="dropdown-toggle" onclick="toggleDropdown('levelDropdown')"></div>
+									<div id="levelDropdown" class="dropdown-content">
+										<label><input type="checkbox" value="—" onchange="filterTable()" checked>No Requirement</label>
+										<label><input type="checkbox" value="5th Level" onchange="filterTable()" checked>5th Level</label>
+										<label><input type="checkbox" value="10th Level" onchange="filterTable()" checked>10th Level</label>
+										<label><input type="checkbox" value="12th Level" onchange="filterTable()" checked>12th Level</label>
+										<label><input type="checkbox" value="14th Level" onchange="filterTable()" checked>14th Level</label>
+										<button onclick="toggleSelectAll('levelDropdown')">Toggle All</button>
+									</div>
+								</div>
+							</th>
+							<th id="subclassHeader" class="subclass-head">
+								Subclass Requirement
+								<div class="custom-dropdown">
+									<div class="dropdown-toggle" onclick="toggleDropdown('subclassDropdown')"></div>
+									<div id="subclassDropdown" class="dropdown-content">
+										<label><input type="checkbox" value="—" onchange="filterTable()" checked>No Requirement</label>
+										<label><input type="checkbox" value="Blackguard" onchange="filterTable()" checked>Blackguard</label>
+										<label><input type="checkbox" value="Monochromancy" onchange="filterTable()" checked>Monochromancy</label>
+										<button onclick="toggleSelectAll('subclassDropdown')">Toggle All</button>
+									</div>
+								</div>
+							</th>
+							<th id="colorHeader" class="color-head">
+								Drafting Color
+								<div class="custom-dropdown">
+									<div class="dropdown-toggle" onclick="toggleDropdown('colorDropdown')"></div>
+									<div id="colorDropdown" class="dropdown-content">
+										<label><input type="checkbox" value="—" onchange="filterTable()" checked>No Req.</label>
+										<label><input type="checkbox" value="Sub-red" onchange="filterTable()" checked>Sub-red</label>
+										<label><input type="checkbox" value="Red" onchange="filterTable()" checked>Red</label>
+										<label><input type="checkbox" value="Orange" onchange="filterTable()" checked>Orange</label>
+										<label><input type="checkbox" value="Yellow" onchange="filterTable()" checked>Yellow</label>
+										<label><input type="checkbox" value="Green" onchange="filterTable()" checked>Green</label>
+										<label><input type="checkbox" value="Blue" onchange="filterTable()" checked>Blue</label>
+										<label><input type="checkbox" value="Superviolet" onchange="filterTable()" checked>Superviolet</label>
+										<button onclick="toggleSelectAll('colorDropdown')">Toggle All</button>
+									</div>
+								</div>
+							</th>
+							<th class="desc-head">Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="show">
+							<td class="name">Bending Light</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Superviolet</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Cerulean Serenity</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Blue</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Crimson Resilience</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Sub-red, Red</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Dazzling Defense</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Yellow</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Drafter’s Resilience</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>—</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Edgedancer</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Orange</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Eidetic Memory</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Blue</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Empowered Casting</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>—</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Fire-heart</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Sub-red, Red</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Impose Will</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>—</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Incombustible</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Orange</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Infra-red Vision</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Sub-red</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Leg Springs</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Green</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Resonance Pulse</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Yellow</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Spectrum Sight</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Orange</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Surprise Attack</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Superviolet</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Tenacity</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>—</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Thrill of Victory</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>—</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Uncanny Intuition</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>—</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Unhindered Movement</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Green</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Wrathful Presence</td>
+							<td class="level-no-req">—</td>
+							<td class="subclass-no-req">—</td>
+							<td>Red</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Blinding Radiance</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Yellow</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Calculated Retaliation</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Blue</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Combat Savant</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Blue</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Empathic Resolve</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Orange</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Energizing Aura</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Yellow</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Erupting Rage</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Sub-red, Red</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Exploding Fury</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Sub-red, Red</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Exploit Weakness</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Orange</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Iridescent Reflection</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Superviolet</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Luxin Mace</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Green</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Trace</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Superviolet</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Verdant Shield</td>
+							<td class="level-req">5th Level</td>
+							<td class="subclass-req-mono">Monochromancy</td>
+							<td>Green</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Deflect Projectile</td>
+							<td class="level-req">10th Level</td>
+							<td class="subclass-req-black">Blackguard</td>
+							<td>—</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Multi-strike Binding</td>
+							<td class="level-req">10th Level</td>
+							<td class="subclass-req-black">Blackguard</td>
+							<td>—</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Perfected Binding</td>
+							<td class="level-req">10th Level</td>
+							<td class="subclass-req-black">Blackguard</td>
+							<td>—</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Iron-clad Will</td>
+							<td class="level-req">12th Level</td>
+							<td class="subclass-req-black">Blackguard</td>
+							<td>—</td>
+							<td class="btn">+</td>
+						</tr>
+						<tr class="show">
+							<td class="name">Advanced Multi-strike Binding</td>
+							<td class="level-req">14th Level</td>
+							<td class="subclass-req-black">Blackguard</td>
+							<td>—</td>
+							<td class="btn">+</td>
+						</tr>
+					</tbody>
+				</table>
+			</div> <!-- /row -->
+		</div> <!-- /container -->
+	</div>
+
+	<footer> <!-- ! Footer -->
+		<div class="container footer-section">
+			<div class="row">
+				<div class="offset-1 col-5 right-a">Email: <a
+						href="mailto:dnd5edraftingclass@gmail.com">dnd5edraftingclass@gmail.com</a></div>
+				<div class="col-5 middle-a">Reddit: <a
+						href="https://www.reddit.com/user/bookofnonsense/">u/bookofnonsense</a></div>
+			</div>
+		</div> <!-- /container -->
+	</footer> <!-- /footer -->
+
+	<script src="../javascript/table.js"></script>
+</body>
+
+</html>
