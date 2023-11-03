@@ -1,0 +1,194 @@
+@font-face {
+	font-family: "IBM Sans";
+	src: url(../fonts/ibm-sans/IBMPlexSans-Regular.ttf) format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "IBM Sans";
+	src: url(../fonts/ibm-sans/IBMPlexSans-SemiBold.ttf) format('truetype');
+	font-weight: bold;
+}
+
+/*! General Styles */
+
+body {
+	font-family: 'IBM Sans', sans-serif;
+}
+
+table {
+	background: #b7b7b7;
+	width: 1110px;
+	table-layout: fixed;
+	border-radius: 4px;
+	margin-bottom: 35px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#table {
+	width: 1110px;
+}
+
+thead {
+	line-height: 20px;
+	background: #8A3500;
+	color: #fff;
+}
+
+th {
+	font-size: 18px;
+	text-align: left;
+	padding: 15px;
+}
+
+tbody td {
+	padding: 18px 18px;
+	font-size: 16px;
+}
+
+tbody td.name {
+	font-weight: bold;
+}
+
+tbody tr.show {
+	display: table-row;
+}
+
+tbody tr.hidden {
+	display: none;
+}
+
+tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.custom-dropdown {
+	position: relative;
+	display: inline-block;
+	right: 0px;
+}
+
+.dropdown-toggle {
+	cursor: pointer;
+	padding: 10px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #313131;
+	border: 1px solid #dedede;
+	padding: 10px;
+	z-index: 1;
+	width: 100%;
+	right: 0px;
+}
+
+.dropdown-content label {
+	display: block;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.custom-dropdown label input {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+	padding-top: 9.5px;
+	font-size: 25px;
+}
+
+.description-row {
+	text-align: center;
+	outline: #1C1C1C 1px solid;
+	outline-offset: -1px;
+	background-color: #acacac;
+	height: 120px;
+}
+
+/*! Innovations Table Styles */
+
+.innovative-table thead .mod-name-head {
+	width: 310px;
+}
+
+.innovative-table thead .level-head {
+	width: 225px;
+}
+
+.innovative-table thead .subclass-head {
+	width: 255px;
+}
+
+.innovative-table thead .color-head {
+	width: 185px;
+}
+
+.innovative-table thead .desc-head {
+	width: 135px;
+}
+
+.innovative-table tbody td.level-req {
+	padding-left: 65px;
+}
+
+.innovative-table tbody td.level-no-req {
+	padding-left: 88.5px;
+}
+
+.innovative-table tbody td.subclass-no-req {
+	padding-left: 105.5px;
+}
+
+.innovative-table tbody td.subclass-req-mono {
+	padding-left: 55px;
+}
+
+.innovative-table tbody td.subclass-req-black {
+	padding-left: 75px;
+}
+
+/*! Spell Mod Table Styles */
+
+.spell-table thead .mod-name-head {
+	width: 200px;
+}
+
+.spell-table thead .color-head {
+	width: 167px;
+	padding-left: 45px;
+}
+
+.spell-table thead .desc-head {
+	text-align: center;
+}
+
+.spell-table thead .allotted-willpower {
+	text-align: center;
+	width: 150px;
+}
+
+.spell-table tbody .color {
+	text-align: center;
+}
+
+.spell-table tbody .willpower-amount {
+	text-align: center;
+}
+
+.spell-table-desc {
+	text-align: center;
+	font-size: 16px;
+	padding-top: 17px;
+}
+
+.spell-table .dropdown-mod-spells {
+	text-align: left;
+}

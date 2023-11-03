@@ -1,0 +1,596 @@
+@font-face {
+	font-family: "IBM Sans";
+	src: url(../fonts/ibm-sans/IBMPlexSans-Regular.ttf) format('truetype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: "IBM Sans";
+	src: url(../fonts/ibm-sans/IBMPlexSans-SemiBold.ttf) format('truetype');
+	font-weight: bold;
+}
+@font-face {
+	font-family: "General Sans";
+	src: url(../fonts/g-sans/GeneralSans-Regular.otf) format('opentype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: "General Sans";
+	src: url(../fonts/g-sans/GeneralSans-Bold.otf) format('opentype');
+	font-weight: bolder;
+}
+@font-face {
+	font-family: "General Sans";
+	src: url(../fonts/g-sans/GeneralSans-Semibold.otf) format('opentype');
+	font-weight: bold;
+}
+@font-face {
+    font-family: "Bookinsanity";
+    src: url("https://raw.githubusercontent.com/jonathonf/solbera-dnd-fonts/master/Bookinsanity/Bookinsanity.otf") format("opentype");
+}
+@font-face {
+    font-family: "Bookinsanity";
+    src: url("https://raw.githubusercontent.com/jonathonf/solbera-dnd-fonts/master/Bookinsanity/Bookinsanity%20Bold%20Italic.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Bookinsanity";
+    src: url("https://raw.githubusercontent.com/jonathonf/solbera-dnd-fonts/master/Bookinsanity/Bookinsanity%20Bold.otf") format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Bookinsanity";
+    src: url("https://raw.githubusercontent.com/jonathonf/solbera-dnd-fonts/master/Bookinsanity/Bookinsanity%20Italic.otf") format("opentype");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Nodesto Caps Condensed";
+    src: url("https://raw.githubusercontent.com/jonathonf/solbera-dnd-fonts/master/Nodesto%20Caps%20Condensed/Nodesto%20Caps%20Condensed.otf") format("opentype");
+}
+@font-face {
+    font-family: "Nodesto Caps Condensed";
+    src: url("https://raw.githubusercontent.com/jonathonf/solbera-dnd-fonts/master/Nodesto%20Caps%20Condensed/Nodesto%20Caps%20Condensed%20Bold%20Italic.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Nodesto Caps Condensed";
+    src: url("https://raw.githubusercontent.com/jonathonf/solbera-dnd-fonts/master/Nodesto%20Caps%20Condensed/Nodesto%20Caps%20Condensed%20Bold.otf") format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Nodesto Caps Condensed";
+    src: url("https://raw.githubusercontent.com/jonathonf/solbera-dnd-fonts/master/Nodesto%20Caps%20Condensed/Nodesto%20Caps%20Condensed%20Italic.otf") format("opentype");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Mr Eaves Small Caps";
+    src: url("https://raw.githubusercontent.com/jonathonf/solbera-dnd-fonts/master/Mr%20Eaves/Mr%20Eaves%20Small%20Caps.otf") format("opentype");
+}
+
+/* Variables */
+
+/*
+:root {
+}
+*/
+
+html {
+	position: relative;
+	min-height: 100%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+.main-content {
+	min-height: calc(100vh - 250px);
+}
+
+.title {
+	font-family: "General Sans", sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 56px;
+	padding: 25px 0px 15px 0px;
+}
+
+h1 {
+	margin: 0px;
+}
+
+.subheading {
+	font-family: "General Sans", sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 42px;
+	margin-top: 10px;
+}
+
+.home-bg {
+	background-image: url("../images/landscape.jpg");
+	background-position-x: center;
+	background-position-y: 120px;
+	background-size: cover;
+}
+
+.reg-bg {
+	background-color: #1C1C1C;
+	background-position-x: center;
+	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.linebreak-md {
+    width: 100%;
+    border: #494949 1px solid;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.linebreak-lg {
+    width: 101.8%;
+    border: #494949 1px solid;
+    margin-left: -14px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+footer {
+	bottom: 0;
+	width: 100%;
+	height: 120px;
+}
+
+/* Scrollbars */
+
+/* Removing Scroll bar without removing scrolling
+body { 
+    -ms-overflow-style: none;
+}
+html { 
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar { 
+    width: 0;
+}
+*/
+
+/* Scrollable Styles */
+.scrollable::-webkit-scrollbar {
+	width: 5px;
+	background-color: #D35100;
+	border-radius: 5px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0px 0px 6px rgba(0,0,0,.8);
+	background-color: #1C1C1C;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+	background-color: #D35100;
+	border-radius: 5px;
+}
+
+/** Header Styles */
+
+header {
+	background-color: #232323;
+	border-bottom-style: double;
+	border-bottom-color: #D35100;
+	padding: 15px 0px 20px 0px;
+	user-select: none;
+}
+
+header .logo {
+	max-width: 163.2px;
+	max-height: 91.8px;
+	min-width: 144px;
+	min-height: 81px;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: cover;
+	user-select: none;
+}
+
+header .site-header {
+	color: #D35100;
+	font-family: "IBM Sans", sans-serif;
+	align-items: flex-end;
+}
+
+ul li ul.dropdown li {
+	display: block;
+	font-size: 24px;
+	align-self: flex-start;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.main-navigation ul {
+	list-style: none;
+	margin-bottom: 2px;
+	display: inline-flex;
+}
+
+.main-navigation ul .active-page {
+	text-decoration: none;
+	color: #D35100;
+	border-bottom: solid 1px #D35100;
+	position: relative;
+}
+
+.main-navigation ul li {
+	margin-left: 14px;
+	margin-right: 14px;
+	position: relative;
+	font-variant: small-caps;
+	font-size: 26px;
+	text-align: left;
+	line-height: 28px;
+}
+
+.main-navigation ul li a:link {
+	text-decoration: none;
+	color: #D35100;
+	display: block;
+	border-bottom: rgba(35,35,35, 0.0) 2px solid;
+}
+
+.main-navigation ul li a:visited {
+	text-decoration: none;
+	color: #D35100;
+	border-bottom: rgba(35,35,35, 0.0) 2px solid;
+}
+
+.main-navigation ul li a:hover {
+	cursor: pointer;
+	border-bottom: #D35100 2px solid;
+}
+
+ul li ul.dropdown {
+	display: none;
+	position: absolute;
+	background-color: #1C1C1C;
+	width: 220px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 999;
+	padding: 12px 16px;
+	left: 0;
+}
+
+ul li:hover ul.dropdown {
+	display: block;
+	/* Display the dropdown */
+}
+
+/** Hero Section Styles */
+
+.hero-text {
+	color: white;
+	padding: 180px 0px 140px 0px;
+}
+
+.hero-text h1 {
+	font-family: "General Sans", sans-serif;
+	font-weight: bold;
+	font-size: 72px;
+}
+
+.hero-text h2 {
+	font-family: "IBM Sans", sans-serif;
+}
+
+.hero-text a {
+	padding: 85px 0px 85px 0px;
+	font-family: "IBM Sans", sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 28px;
+	padding: 16px 80px;
+	background-color: #D35100;
+	border-radius: 16px;
+	border-style: outset;
+	border-width: 2px;
+	border-color: grey;
+	display: inline-block;
+}
+
+.hero-text a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.hero-text a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* mouse over link */
+.hero-text a:hover {
+	background-color: #8A3500;
+	padding: 16px 80px;
+	cursor: pointer;
+	border-radius: 16px;
+}
+
+/* selected link */
+.hero-text a:active {
+	background-color: #D35100;
+	border-style: inset;
+}
+
+/** Footer Styles */
+
+footer .footer-section {
+	font-family: "IBM Sans", sans-serif;
+	font-weight: bolder;
+	color: #b7b7b7;
+	user-select: none;
+}
+
+.footer-section .row {
+	display: flex;
+	list-style: none;
+	margin-bottom: 0px;
+	justify-content: space-between;
+	font-size: 21px;
+	padding: 40px 0px 0px 0px;
+	flex-wrap: nowrap;
+}
+
+/* Footer Buttons*/
+
+.footer-section .row a {
+	border-radius: 8px;
+	display: inline-block;
+	text-align: center;
+	font-weight: normal;
+}
+
+.footer-section .row a:link {
+	text-decoration: none;
+	color: #eaeaea;
+}
+
+.footer-section .row a:visited {
+	text-decoration: none;
+	color: #eaeaea;
+}
+
+/* mouse over link */
+.footer-section .row a:hover {
+	cursor: pointer;
+	color: #D35100;
+	text-decoration: underline;
+}
+
+footer {
+	background-color: #232323;
+}
+
+/** Website Styles */
+
+.left-a {
+	text-align: left;
+}
+
+.center-a {
+	text-align: center;
+}
+
+.right-a {
+	text-align: right;
+}
+
+body {
+	background-color: #232323;
+}
+
+/* PDF Styling */
+
+.pdf-link {
+	margin-top: 10px;
+	margin-bottom: 25px;
+	display: block;
+	text-align: center;
+}
+
+.main-content .pdf-link a {
+	font-family: "IBM Sans", sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 10px 40px;
+	background-color: #D35100;
+	border-radius: 16px;
+	border-style: outset;
+	border-width: 1px;
+	border-color: grey;
+	text-decoration: none;
+}
+
+.main-content .pdf-link a:hover {
+	font-family: "IBM Sans", sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #8A3500;
+	border-radius: 16px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: grey;
+	text-decoration: none;
+}
+
+.main-content .pdf-link a:active {
+	font-family: "IBM Sans", sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #D35100;
+	border-radius: 16px;
+	border-style: inset;
+	border-width: 1px;
+	border-color: grey;
+	text-decoration: none;
+}
+
+.flip-book {
+	display: flex;
+	width: 100%;
+	height: 690px;
+	padding-bottom: 20px;
+}
+
+.flip-book iframe {
+	width: 100%;
+	height: 100%;
+	border: 0px;
+}
+
+/* Dropdown Styles */
+
+.dropdown-text {
+	color: #D35100;
+	font-size: 32px;
+	font-family: "IBM Sans", sans-serif;
+}
+
+.dropdown-text a {
+	color: #D35100;
+	font-size: 32px;
+	font-family: "IBM Sans", sans-serif;
+}
+
+/* Image Tracks */
+
+.lore {
+	background-color: #1C1C1C;
+	background-position-x: center;
+	background-size: cover;
+}
+
+.mobile-navigation {
+	display: none;
+}
+
+.trigger {
+	position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.main-navigation {
+		display: none;
+	}
+
+	.mobile-navigation {
+		display: block;
+		position: relative;
+	}
+
+	.mobile {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		top: 32px;
+		width: 100%;
+	}
+
+	.mobile.showme {
+		visibility: visible;
+		opacity: 1;
+	}
+
+}
+
+.lore-content {
+	display: grid;
+	row-gap: 2px;
+}
+
+.lore-content h2 {
+	color: #FFFFFF;
+	font-family: "IBM Sans", sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	padding-bottom: 15px;
+	padding-top: 20px;
+}
+
+.lore-content p {
+	color: #FFFFFF;
+	font-family: "IBM Sans", sans-serif;
+	font-size: 20px;
+}
+
+/* Spell Modification Styles */
+
+.spell-mods {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	justify-content: space-between;
+}
+
+.spell-mods #upcastOption {
+	width: 240px;
+}
+
+.spell-mods select{
+	background-color: #232323;
+	border: #494949 1px solid;
+	cursor: pointer;
+	padding: 10px 15px 10px 15px;
+	font-family: "IBM Sans", sans-serif;
+	font-weight:bold;
+	font-size: 20px;
+	color: white;
+	border-radius: 8px;
+}
+
+.mod-spell-card {
+	width: 360px;
+	height: 500px;
+	top: 0;
+	padding: 18px 20px 15px 20px;
+	font-family: "Bookinsanity", serif;
+	background-color: #e6e1e1;
+	border: 10px solid;
+	border-radius: 20px;
+	outline: 2px solid #e6e1e1;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mod-spell-card h3 {
+	color: #8A3500;
+	font-family: "Mr Eaves Small Caps", serif;
+	margin-bottom: -2px;
+	font-size: 33px;
+	letter-spacing: -1px;
+	line-height: 30px;
+	border-bottom: 2px solid #cca01d;
+}
+
+.mod-spell-card .spell-type {
+	font-style: italic;
+}
+
+.mod-spell-card .spell-info {
+	font-family: "IBM Sans", serif;
+	padding-top: 15px;
+	line-height: 3px;
+}
+
+.mod-spell-card .spell-info b {
+	font-family: "General Sans", serif;
+	font-weight: bolder;
+}
+
+.mod-spell-card .spell-desc {
+	line-height: 21px;
+	font-family: "IBM Sans", serif;
+	font-size: 15.5px;
+}
