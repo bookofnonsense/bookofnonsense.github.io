@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Drafting in D&D - Drafter</title>
+	<link rel='stylesheet' href='https://unpkg.com/flickity@2/dist/flickity.min.css'>
+	<link rel="stylesheet" href="../../css/card.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="reg-bg scrollable">
+	<header> <!-- ! Header -->
+		<div class="container site-header d-flex">
+			<a href="../../index.html" draggable="false">
+				<img src="../../images/logo-words.png" class="logo" alt="Drafting in D&D" draggable="false">
+			</a>
+			<nav class="main-navigation ml-auto">
+				<ul>
+					<li class="active-page"><a href="drafter.html" draggable="false">Drafter</a>
+						<ul class="dropdown">
+							<li><a href="handbook.html" draggable="false">Handbook</a></li>
+							<li><a href="personality.html" draggable="false">Personality</a></li>
+						</ul>
+					</li>
+					<li><a href="../builder.html" draggable="false">Builder</a></li>
+					<li><a href="../spells/spells.html" draggable="false">Spells</a>
+						<ul class="dropdown">
+							<li><a href="../spells/spells-cards.html" draggable="false">Spell Cards</a></li>
+							<li><a href="../spells/modifications.html" draggable="false">Modifications</a></li>
+							<li><a href="../spells/mod-calculator.html" draggable="false">Mod Calculator</a></li>
+						</ul>
+					</li>
+					<li><a href="../innovations.html" draggable="false">Innovations</a></li>
+				</ul>
+			</nav> <!-- /main navigation -->
+		</div> <!-- /site header -->
+	</header>
+
+	<div class="main-content"> <!-- ! Content Section -->
+		<div class="container">
+			<h1 class="title">A Drafter's Handbook</h1>
+
+			<div class="flip-book">
+				<iframe src="https://online.fliphtml5.com/nefue/atht/" allowfullscreen></iframe>
+			</div>
+
+			<div class="pdf-link">
+				<a href="../../pdfs/Drafter-The_Homebrewery.pdf" target="_blank">Download PDF</a>
+			</div>
+
+			<div class="linebreak-lg"></div>
+			
+			<div class="row">
+				<div class="subheading left-a">Drafter Personality</div>
+			</div>
+
+			<div class="carousel lore">
+				<div class="carousel-cell card-subred lore-cell"><img
+						src="https://cdn.discordapp.com/attachments/1147402447736815708/1157364392791380070/image.png?ex=65185716&is=65170596&hm=dfeede07d583f086b39ff5eea0ca5d118ebc530cb9d479124026713d5bef4603&"
+						class="p" draggable="false" alt="Dark-red colored eye.">
+					<p class="n">Sub-red Drafters</p>
+					<p class="t">Incredibly passionate and pure, usually the quickest to rage or cry.</p>
+					<p class="b" onclick="subred(); scroll_down();">More Info</p>
+					<p class="content"></p>
+				</div>
+				<div class="carousel-cell card-red lore-cell"><img
+						src="https://cdn.discordapp.com/attachments/1147402447736815708/1157364076280807525/image.png?ex=651856ca&is=6517054a&hm=76c83ab28f19f32efb9e043d0dcf2636163364393fde0b7084b18c73f2ddc053&"
+						class="p" draggable="false" alt="Red colored eye.">
+					<p class="n">Red Drafters</p>
+					<p class="t">Quick-tempered and love destruction.</p>
+					<p class="b" onclick="red(); scroll_down();">More Info</p>
+				</div>
+				<div class="carousel-cell card-orange lore-cell"><img
+						src="https://cdn.discordapp.com/attachments/1147402447736815708/1157364534323978349/image.png?ex=65185737&is=651705b7&hm=a9c5ce98da511d175173695ad11649bca75e586099b8819b5688b468de2da81f&"
+						class="p" draggable="false" alt="Orange colored eye.">
+					<p class="n">Orange Drafters</p>
+					<p class="t">Artistic and empathetic, understanding of emotions and motivations.</p>
+					<p class="b" onclick="orange(); scroll_down();">More Info</p>
+				</div>
+				<div class="carousel-cell card-yellow lore-cell"><img
+						src="https://cdn.discordapp.com/attachments/1147402447736815708/1157364719678664754/image.png?ex=65185763&is=651705e3&hm=fbc0ec097a94de718a9a51a57b497921740b92ff703b85ad80a3af7a3fdcdade&"
+						class="p" draggable="false" alt="Yellow colored eye.">
+					<p class="n">Yellow Drafters</p>
+					<p class="t">Clear thinkers, equally emotional and intellectual.</p>
+					<p class="b" onclick="yellow(); scroll_down();">More Info</p>
+				</div>
+				<div class="carousel-cell card-green lore-cell"><img
+						src="https://cdn.discordapp.com/attachments/1147402447736815708/1157364861873954846/image.png?ex=65185785&is=65170605&hm=0052b9835885a6c5f4ccc82780ab68061d20cd7896ae2687c56c2a33de59fe13&"
+						class="p" draggable="false" alt="Green colored eye.">
+					<p class="n">Green Drafters</p>
+					<p class="t">Wild and free, hate the feeling of being chained down.</p>
+					<p class="b" onclick="green(); scroll_down();">More Info</p>
+				</div>
+				<div class="carousel-cell card-blue lore-cell"><img
+						src="https://cdn.discordapp.com/attachments/1147402447736815708/1157365011220529233/image.png?ex=651857a9&is=65170629&hm=02e3991fde54819d4b04be909ec22b32695d54688a6572c551ebae04a03c8180&"
+						class="p" draggable="false" alt="Blue colored eye.">
+					<p class="n">Blue Drafters</p>
+					<p class="t">Logic driven, treating lives as pieces in a larger game.</p>
+					<p class="b" onclick="blue(); scroll_down();">More Info</p>
+				</div>
+				<div class="carousel-cell card-superviolet lore-cell"><img
+						src="https://cdn.discordapp.com/attachments/1147402447736815708/1157365148638531584/image.png?ex=651857ca&is=6517064a&hm=1bf6087494e448bd7c9fd0b6feda85f2b5a2d65c21bfdf828b853f5e50ff1704&"
+						class="p" draggable="false" alt="Violet colored eye.">
+					<p class="n">Superviolet Drafters</p>
+					<p class="t">Cold, believing people to be a type of puzzle with a correct answer.</p>
+					<p class="b" onclick="superviolet(); scroll_down();">More Info</p>
+				</div>
+			</div>
+
+			<br><br><br><br><br><br><br>
+			<div class="row">
+				<div class="lore-content">
+					<p id="more-info"></p>
+				</div>
+			</div>
+		</div> <!-- /container -->
+	</div>
+
+	<footer> <!-- ! Footer -->
+		<div class="container footer-section">
+			<div class="row">
+				<div class="offset-1 col-5 right-a">Email: <a href="mailto:dnd5edraftingclass@gmail.com">dnd5edraftingclass@gmail.com</a></div>
+				<div class="col-5 middle-a">Reddit: <a href="https://www.reddit.com/user/bookofnonsense/">u/bookofnonsense</a></div>
+			</div>
+		</div> <!-- /container -->
+	</footer> <!-- /footer -->
+
+	<script>
+		$(".trigger").on("click", function () {
+			$('.mobile').toggleClass('showme');
+		});
+	</script>
+
+	<!-- Setting up the colors changing the information presented -->
+	<script>
+		function subred() {
+			var x = document.getElementById("more-info");
+			if (x.innerHTML !== "<h2>Sub-red</h2><p>Passionate in all ways, the most purely emotional of all drafters, the quickest to rage or to cry. Sub-reds love	music, are often impulsive, fear the dark less than any other color, and are often insomniacs. Emotional, distractible, unpredictable, inconsistent, loving, bighearted. Sub-red men are often sterile.</p><p>Sub-red Luxin, or Firecrystal, is a volatile substance that will burst into flame upon contact with the air. It’s solid form is called Fire Crystal, and only exists in airless environments or when held. Drafting Sub-red Luxin requires a visible heat source, and it gives the drafter an intense sensation of passion.</p><p>Sub-red is associated with more of the hotter passions, both good and bad: wrath, protection, vengeance, and possessive love.</p><p><b>Associated vice:</b> Wrath</p><p><b>Associated virtue:</b> Patience</p>") {
+				x.innerHTML = "<h2>Sub-red</h2><p>Passionate in all ways, the most purely emotional of all drafters, the quickest to rage or to cry. Sub-reds love	music, are often impulsive, fear the dark less than any other color, and are often insomniacs. Emotional, distractible, unpredictable, inconsistent, loving, bighearted. Sub-red men are often sterile.</p><p>Sub-red Luxin, or Firecrystal, is a volatile substance that will burst into flame upon contact with the air. It’s solid form is called Fire Crystal, and only exists in airless environments or when held. Drafting Sub-red Luxin requires a visible heat source, and it gives the drafter an intense sensation of passion.</p><p>Sub-red is associated with more of the hotter passions, both good and bad: wrath, protection, vengeance, and possessive love.</p><p><b>Associated vice:</b> Wrath</p><p><b>Associated virtue:</b> Patience</p>";
+			}
+			else {
+				x.innerHTML = "";
+			}
+		}
+		function red() {
+			var x = document.getElementById("more-info");
+			if (x.innerHTML !== "<h2>Red</h2><p>Quick-tempered, lusty, and love destruction. They are also warm, inspiring, brash, larger than life, expansive, jovial, and powerful.</p><p>Red Luxin is a highly flammable and viscous substance often used in warfare. Depending on the shading, it can be almost entirely fluid, or be made to congeal into a thick, tough substance like tar. It can come to life and ensnare people trapped in it, or it can be launched at high speeds. Due to its flammability, a globule of Red Luxin impacting an object at high enough speeds will ignite it and thoroughly cook anything nearby.</p><p>Drafting Red Luxin will induce emotions of rage, lust, and drive. After years of drafting Red, it will leave a permanent change on the personality of the Drafter, leaving them with a shorter fuse than they might normally have had.</p><p><b>Associated vice:</b> Gluttony</p><p><b>Associated virtue:</b> Temperance</p>") {
+				x.innerHTML = "<h2>Red</h2><p>Quick-tempered, lusty, and love destruction. They are also warm, inspiring, brash, larger than life, expansive, jovial, and powerful.</p><p>Red Luxin is a highly flammable and viscous substance often used in warfare. Depending on the shading, it can be almost entirely fluid, or be made to congeal into a thick, tough substance like tar. It can come to life and ensnare people trapped in it, or it can be launched at high speeds. Due to its flammability, a globule of Red Luxin impacting an object at high enough speeds will ignite it and thoroughly cook anything nearby.</p><p>Drafting Red Luxin will induce emotions of rage, lust, and drive. After years of drafting Red, it will leave a permanent change on the personality of the Drafter, leaving them with a shorter fuse than they might normally have had.</p><p><b>Associated vice:</b> Gluttony</p><p><b>Associated virtue:</b> Temperance</p>";
+			}
+			else {
+				x.innerHTML = "";
+			}
+		}
+		function orange() {
+			var x = document.getElementById("more-info");
+			if (x.innerHTML !== "<h2>Orange</h2><p>Often artists, brilliant in understanding other people’s emotions and motivations. Some use this to defy or exceed expectations. Sensitive, manipulative, idiosyncratic, slippery, charismatic, empathetic.</p><p>Orange Luxin is a highly lubricative Luxin often used in mechanical maintenance. It can be placed upon surfaces to make an area treacherous to walk on. Although it is oily in texture, it is entirely nonflammable and will smother most fires.</p><p>Furthermore, a technique of orange which is forbidden to even speak of is tromoturgy. Tromoturgy is a unique function of orange that allows the drafter to impose emotions on their target, most frequently fear. This use of luxin is considered sinful and even mentioning it is often forbidden.</p><p>Drafting Orange Luxin will induce feelings of emotional comprehension and inventiveness. Orange drafters see and understand the desires and biases of others. After years of drafting Orange it will leave a permanent change to the personality of the Drafter, leaving them more emotive, charismatic, and often; manipulative. Often this is expressed through either artistic contradiction of social norms or smooth social integration.</p><p><b>Associated vice:</b> Greed</p><p><b>Associated virtue:</b> Charity</p>") {
+				x.innerHTML = "<h2>Orange</h2><p>Often artists, brilliant in understanding other people’s emotions and motivations. Some use this to defy or exceed expectations. Sensitive, manipulative, idiosyncratic, slippery, charismatic, empathetic.</p><p>Orange Luxin is a highly lubricative Luxin often used in mechanical maintenance. It can be placed upon surfaces to make an area treacherous to walk on. Although it is oily in texture, it is entirely nonflammable and will smother most fires.</p><p>Furthermore, a technique of orange which is forbidden to even speak of is tromoturgy. Tromoturgy is a unique function of orange that allows the drafter to impose emotions on their target, most frequently fear. This use of luxin is considered sinful and even mentioning it is often forbidden.</p><p>Drafting Orange Luxin will induce feelings of emotional comprehension and inventiveness. Orange drafters see and understand the desires and biases of others. After years of drafting Orange it will leave a permanent change to the personality of the Drafter, leaving them more emotive, charismatic, and often; manipulative. Often this is expressed through either artistic contradiction of social norms or smooth social integration.</p><p><b>Associated vice:</b> Greed</p><p><b>Associated virtue:</b> Charity</p>";
+			}
+			else {
+				x.innerHTML = "";
+			}
+		}
+		function yellow() {
+			var x = document.getElementById("more-info");
+			if (x.innerHTML !== "<h2>Yellow</h2><p>Yellows tend to be clear thinkers, with intellect and emotion in perfect balance. Cheerful, wise, bright, balanced, watchful, impassive, observant, brutally honest at times, excellent liars.</p><p>Yellow Luxin is like bubbly, effervescent water, and will flashboil back into light upon contact with the air unless held. In its liquid form it is used to created beautiful fireworks, explosives, torches, and many other disposable incendiaries. In its solid form however, it becomes the most stable and solid of all Luxins.</p><p>Drafting Yellow Luxin will induce emotions of equilibrium, peace, and acceptance. After years of drafting Yellow, it will leave a permanent change on the personality of the Drafter, leaving them more clear-thinking, balanced, cheerful, and excellent liars. Yellow drafters also have the tendency to be thinkers, not doers, which breeds a stereotype of laziness.</p><p><b>Associated vice:</b> Sloth</p><p><b>Associated virtue:</b> Diligence</p>") {
+				x.innerHTML = "<h2>Yellow</h2><p>Yellows tend to be clear thinkers, with intellect and emotion in perfect balance. Cheerful, wise, bright, balanced, watchful, impassive, observant, brutally honest at times, excellent liars.</p><p>Yellow Luxin is like bubbly, effervescent water, and will flashboil back into light upon contact with the air unless held. In its liquid form it is used to created beautiful fireworks, explosives, torches, and many other disposable incendiaries. In its solid form however, it becomes the most stable and solid of all Luxins.</p><p>Drafting Yellow Luxin will induce emotions of equilibrium, peace, and acceptance. After years of drafting Yellow, it will leave a permanent change on the personality of the Drafter, leaving them more clear-thinking, balanced, cheerful, and excellent liars. Yellow drafters also have the tendency to be thinkers, not doers, which breeds a stereotype of laziness.</p><p><b>Associated vice:</b> Sloth</p><p><b>Associated virtue:</b> Diligence</p>";
+			}
+			else {
+				x.innerHTML = "";
+			}
+		}
+		function green() {
+			var x = document.getElementById("more-info");
+			if (x.innerHTML !== "<h2>Green</h2><p>Wild, free, flexible, adaptable, nurturing, friendly. They don’t so much disrespect authority as not even recognize it.</p><p>Green Luxin is a rough, but springy, substance employed in a wide variety of uses. In construction, it is used to allow buildings to “give,” or to sway a bit in the wind, which allows them to stay upright for hundreds of years without falling. In warfare, they can be used to create projectiles, mediocre swords, and even to go Green Golem, a state where the drafter envelopes their entire body in Held Green Luxin and uses it as battle armor. Green is also capable of being used as fertilizer making it useful in peace time to aid crops growth.</p><p>Drafting Green Luxin will induce a relatively powerful emotion compared to other Luxins, that of extreme wildness, lust, and disregard for any and all forms of authority. After long years of drafting Green, it will leave a permanent change on the personality of the Drafter, leaving them friendly, wild, and a little unhinged.</p><p><b>Associated vice:</b> Lust</p><p><b>Associated virtue:</b> Self-control</p>") {
+				x.innerHTML = "<h2>Green</h2><p>Wild, free, flexible, adaptable, nurturing, friendly. They don’t so much disrespect authority as not even recognize it.</p><p>Green Luxin is a rough, but springy, substance employed in a wide variety of uses. In construction, it is used to allow buildings to “give,” or to sway a bit in the wind, which allows them to stay upright for hundreds of years without falling. In warfare, they can be used to create projectiles, mediocre swords, and even to go Green Golem, a state where the drafter envelopes their entire body in Held Green Luxin and uses it as battle armor. Green is also capable of being used as fertilizer making it useful in peace time to aid crops growth.</p><p>Drafting Green Luxin will induce a relatively powerful emotion compared to other Luxins, that of extreme wildness, lust, and disregard for any and all forms of authority. After long years of drafting Green, it will leave a permanent change on the personality of the Drafter, leaving them friendly, wild, and a little unhinged.</p><p><b>Associated vice:</b> Lust</p><p><b>Associated virtue:</b> Self-control</p>";
+			}
+			else {
+				x.innerHTML = "";
+			}
+		}
+		function blue() {
+			var x = document.getElementById("more-info");
+			if (x.innerHTML !== "<h2>Blue</h2><p>Orderly, inquisitive, rational, calm, cold, impartial, intelligent, musical. Structure, rules, and hierarchy are important to them. Blues are often mathematicians and composers. Ideas and ideology and correctness often matter more than people to blues.</p><p>Blue Luxin is a brittle substance. When drafted well is smooth and can be very sharp, making for excellent weaponry or projectiles. Even when poorly drafted it is a more than suitable armament, although it will have a tendency to flake apart, leaving chalky residue all around.</p><p>Drafting Blue Luxin gives a sense of absolute clarity, logic, and order. Long years of drafting will lead blue drafters to become more calculating, more emotionally stunted, and logical.</p><p><b>Associated vice:</b> Envy</p><p><b>Associated virtue:</b> Kindness (Gratitude)</p>") {
+				x.innerHTML = "<h2>Blue</h2><p>Orderly, inquisitive, rational, calm, cold, impartial, intelligent, musical. Structure, rules, and hierarchy are important to them. Blues are often mathematicians and composers. Ideas and ideology and correctness often matter more than people to blues.</p><p>Blue Luxin is a brittle substance. When drafted well is smooth and can be very sharp, making for excellent weaponry or projectiles. Even when poorly drafted it is a more than suitable armament, although it will have a tendency to flake apart, leaving chalky residue all around.</p><p>Drafting Blue Luxin gives a sense of absolute clarity, logic, and order. Long years of drafting will lead blue drafters to become more calculating, more emotionally stunted, and logical.</p><p><b>Associated vice:</b> Envy</p><p><b>Associated virtue:</b> Kindness (Gratitude)</p>";
+			}
+			else {
+				x.innerHTML = "";
+			}
+		}
+		function superviolet() {
+			var x = document.getElementById("more-info");
+			if (x.innerHTML !== "<h2>Superviolet</h2><p>Tend to have a detached outlook; dispassionate, they appreciate irony and sarcasm and word games and are often cold, viewing people as puzzles to be solved or ciphers to be cracked. Irrationality outrages superviolets.</p><p>Superviolet Luxin, is a thin and light substance which is invisible to most non-Superviolet Drafters. Due to its invisibility it is often used in cryptography, “magical-slight-of-hands,” and for manipulating hidden controls built into most Luxin-based infrastructure.</p><p>Due to the invisibility of Superviolet Luxin, it is often used to write secret messages that normal spies would not be able to detect. For this reason Superviolet Drafters are often employed as personal cryptographers or even spymasters by powerful individuals, and are taught early on how to create cyphers that even other Superviolet Drafters would not be able to make sense of.</p><p><b>Associated vice:</b> Pride</p><p><b>Associated virtue:</b> Humility</p>") {
+				x.innerHTML = "<h2>Superviolet</h2><p>Tend to have a detached outlook; dispassionate, they appreciate irony and sarcasm and word games and are often cold, viewing people as puzzles to be solved or ciphers to be cracked. Irrationality outrages superviolets.</p><p>Superviolet Luxin, is a thin and light substance which is invisible to most non-Superviolet Drafters. Due to its invisibility it is often used in cryptography, “magical-slight-of-hands,” and for manipulating hidden controls built into most Luxin-based infrastructure.</p><p>Due to the invisibility of Superviolet Luxin, it is often used to write secret messages that normal spies would not be able to detect. For this reason Superviolet Drafters are often employed as personal cryptographers or even spymasters by powerful individuals, and are taught early on how to create cyphers that even other Superviolet Drafters would not be able to make sense of.</p><p><b>Associated vice:</b> Pride</p><p><b>Associated virtue:</b> Humility</p>";
+			}
+			else {
+				x.innerHTML = "";
+			}
+		}
+		function scroll_down() {
+			document.getElementById('more-info').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+		}
+	</script>
+
+	<script src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	<script src="../../javascript/cards.js"></script>
+</body>
+
+</html>
